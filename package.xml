@@ -1,0 +1,16 @@
+<package format="2">
+    <name>auvsi_misc</name>
+    <version>0.0.1</version>
+    <description>
+	    Miscellaneous scripts for auvsi
+    </description>
+    <maintainer email="billtheplatypus@github.com">billtheplatypus</maintainer>
+    <license>Whatever</license>
+
+    <buildtool_depend>catkin</buildtool_depend>
+
+    <depend>rospy</depend>
+    <depend>tools</depend>
+    <depend>rosplane</depend>
+
+</package>
