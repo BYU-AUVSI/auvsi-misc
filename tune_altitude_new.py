@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 import rospy
-from rosplane_msgs.msg import Controller_Commands
+from rosplane_msgs.msg import Internal_Commands
 import std_msgs
 from math import pi
 
