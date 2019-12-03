@@ -11,13 +11,14 @@ def main():
     command_altitude = rospy.get_param('~altitude', 40.0)
     amplitude = rospy.get_param('~amplitude', 5.*pi/180)
     period = rospy.get_param('~period', 20)
-    center_course = rospy.get_param('~center_course', 0)
+    center_course = rospy.get_param('~center_course', 90*pi/180)
 
     command_pub = rospy.Publisher(command_topic, Internal_Commands, queue_size=1)
 
     command = Internal_Commands()
     command.Va_c = command_airspeed
     command.h_c = command_altitude
+    command.tuning_zone = 5 # TUNE_COURSE
 
     neg_alt_msg = std_msgs.msg.Float32()
 
