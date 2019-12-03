@@ -7,7 +7,7 @@ from math import pi
 def main():
     rospy.init_node('TUNE_AIRSPEED_THR', anonymous=True)
     command_topic = rospy.get_param('~command_topic', 'internal_commands')
-    center_airspeed = rospy.get_param('~airspeed', 30.0)
+    center_airspeed = rospy.get_param('~airspeed', 15.0)
     amplitude = rospy.get_param('~amplitude', 2)
     period = rospy.get_param('~period', 20)
 
